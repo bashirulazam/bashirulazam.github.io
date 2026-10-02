@@ -1,10 +1,288 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Bashirul Azam Biswas</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Bashirul Azam Biswas — Postdoctoral Research Associate at Dartmouth College working on reliable, uncertainty-aware, and knowledge-guided AI for medical imaging and computer vision." />
+  <meta name="author" content="Bashirul Azam Biswas" />
+  <title>Bashirul Azam Biswas | Academic Website</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <h1>Bashirul Azam Biswas</h1>
-    <p>Welcome to my academic website.</p>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#top">Bashirul Azam Biswas</a>
+      <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#publications">Publications</a>
+        <a href="#experience">Experience</a>
+        <a href="#teaching">Teaching</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Reliable & Knowledge-Guided Artificial Intelligence</p>
+          <h1>Bashirul Azam Biswas, Ph.D.</h1>
+          <p class="hero-role">Postdoctoral Research Associate · Department of Biomedical Data Science · Dartmouth College</p>
+          <p class="hero-lead">
+            I develop AI systems that combine <strong>prior knowledge</strong>, <strong>physics-informed constraints</strong>,
+            and <strong>predictive uncertainty</strong> to improve reliability and generalization across medical imaging,
+            computer vision, and multimodal learning.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#research">Explore my research</a>
+            <a class="button secondary" href="https://scholar.google.com/citations?hl=en&user=4H9GwRYAAAAJ" target="_blank" rel="noopener">Google Scholar</a>
+          </div>
+          <div class="social-row">
+            <a href="mailto:Bashirul.Azam.Biswas@dartmouth.edu">Email</a>
+            <span>·</span>
+            <a href="https://www.linkedin.com/in/bashirulazam" target="_blank" rel="noopener">LinkedIn</a>
+            <span>·</span>
+            <a href="https://github.com/bashirulazam" target="_blank" rel="noopener">GitHub</a>
+            <span>·</span>
+            <a href="https://dblp.org/search?q=Bashirul%20Azam%20Biswas" target="_blank" rel="noopener">DBLP</a>
+          </div>
+        </div>
+
+        <aside class="hero-card" aria-label="Profile">
+          <img class="profile-photo" src="https://sites.ecse.rpi.edu/~cvrl/Bashirul/figures/Bashirul_Azam_Biswas.jpg" alt="Bashirul Azam Biswas" />
+          <div class="profile-meta">
+            <h2>Bashirul Azam Biswas</h2>
+            <p>Biomedical Data Science</p>
+            <p>Geisel School of Medicine at Dartmouth</p>
+            <p class="profile-location">Hanover, New Hampshire</p>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container narrow">
+        <p class="section-kicker">About</p>
+        <h2 class="section-title">Building reliable AI with structure, knowledge, and uncertainty.</h2>
+        <p class="section-copy">
+          I am a Postdoctoral Research Associate in Biomedical Data Science at Dartmouth College, where I work on AI methods for whole-body PET/CT analysis, cancer lesion segmentation, self-supervised learning, domain generalization, and uncertainty quantification. My broader research agenda is to move beyond purely data-driven prediction by incorporating prior knowledge, physical and anatomical constraints, and calibrated uncertainty into learning systems.
+        </p>
+        <p class="section-copy">
+          I received my Ph.D. in Electrical, Computer, and Systems Engineering from Rensselaer Polytechnic Institute (RPI), where my research focused on probabilistic scene graph generation, structured prediction, and uncertainty-aware visual reasoning. My work spans medical imaging, computer vision, probabilistic machine learning, and multimodal AI.
+        </p>
+      </div>
+    </section>
+
+    <section class="section alt" id="research">
+      <div class="container">
+        <p class="section-kicker">Research</p>
+        <h2 class="section-title">Research vision</h2>
+        <p class="section-intro">
+          My long-term goal is to develop AI systems that are not only accurate, but also aware of what they know, constrained by domain structure, and capable of integrating multiple forms of evidence.
+        </p>
+
+        <div class="vision-grid">
+          <article class="vision-card">
+            <div class="card-number">01</div>
+            <h3>Prior Knowledge</h3>
+            <p>Integrating anatomical, spatial, relational, and population-level priors into deep learning systems to improve sample efficiency and generalization.</p>
+          </article>
+          <article class="vision-card">
+            <div class="card-number">02</div>
+            <h3>Physics & Domain Constraints</h3>
+            <p>Embedding meaningful constraints from imaging physics and domain structure so learned models produce more plausible and robust predictions.</p>
+          </article>
+          <article class="vision-card">
+            <div class="card-number">03</div>
+            <h3>Model Uncertainty</h3>
+            <p>Quantifying aleatoric and epistemic uncertainty and using uncertainty as an actionable signal for model fusion, data selection, and clinical decision support.</p>
+          </article>
+        </div>
+
+        <div class="research-projects">
+          <article class="project-card">
+            <span class="project-tag">Medical AI · PET/CT</span>
+            <h3>Uncertainty-aware whole-body lesion segmentation</h3>
+            <p>Developing uncertainty-augmented segmentation approaches for multi-tracer PET/CT, including FDG and PSMA imaging, to improve robustness across lesion burden, cancer types, and radiotracers.</p>
+          </article>
+          <article class="project-card">
+            <span class="project-tag">Foundation Models · SSL</span>
+            <h3>Label-efficient learning across tracers</h3>
+            <p>Exploring self-supervised and foundation-model-based strategies for learning transferable representations from large unlabeled PET/CT cohorts and reducing annotation requirements.</p>
+          </article>
+          <article class="project-card">
+            <span class="project-tag">Prior-Informed AI</span>
+            <h3>Anatomical and population-level priors</h3>
+            <p>Combining deep neural predictions with anatomical atlases and population-level metastatic distributions to improve clinically meaningful lesion detection.</p>
+          </article>
+          <article class="project-card">
+            <span class="project-tag">Computer Vision · Structured AI</span>
+            <h3>Probabilistic scene graph generation</h3>
+            <p>Modeling relationships between visual entities using Bayesian networks, structured probabilistic models, temporal reasoning, and uncertainty-aware inference.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="publications">
+      <div class="container">
+        <div class="section-heading-row">
+          <div>
+            <p class="section-kicker">Selected Publications</p>
+            <h2 class="section-title">Research highlights</h2>
+          </div>
+          <a class="text-link" href="https://scholar.google.com/citations?hl=en&user=4H9GwRYAAAAJ" target="_blank" rel="noopener">View all on Google Scholar →</a>
+        </div>
+
+        <div class="publication-list">
+          <article class="publication">
+            <div class="pub-year">2026</div>
+            <div>
+              <h3>Improving PET/CT-Based Whole-Body Lesion Segmentation Using Prediction Uncertainty-Augmented Models</h3>
+              <p class="pub-authors"><strong>Bashirul Azam Biswas</strong>, Biratal Raj Wagle, Zhihan Yang, Marc A. Seltzer, Matthew E. Maeder, James B. Yu, Indrani Bhattacharya</p>
+              <p class="pub-venue">Preprint / Medical imaging</p>
+            </div>
+          </article>
+
+          <article class="publication">
+            <div class="pub-year">2026</div>
+            <div>
+              <h3>MUST-PET: MUltimodal Self-supervised learning across Tracers for whole-body PET/CT-based lesion segmentation</h3>
+              <p class="pub-authors"><strong>Bashirul Azam Biswas</strong>, Amartya Bhattacharya, Biratal Raj Wagle, Matthew E. Maeder, James B. Yu, Indrani Bhattacharya</p>
+              <p class="pub-venue">Preprint / Self-supervised medical imaging</p>
+            </div>
+          </article>
+
+          <article class="publication">
+            <div class="pub-year">2024</div>
+            <div>
+              <h3>Optimization-Based Uncertainty Attribution Via Learning Informative Perturbations</h3>
+              <p class="pub-authors">Hanjing Wang, <strong>Bashirul Azam Biswas</strong>, Qiang Ji</p>
+              <p class="pub-venue">European Conference on Computer Vision (ECCV), 2024</p>
+            </div>
+          </article>
+
+          <article class="publication">
+            <div class="pub-year">2023</div>
+            <div>
+              <h3><a href="https://arxiv.org/abs/2211.06444" target="_blank" rel="noopener">Probabilistic Debiasing of Scene Graphs</a></h3>
+              <p class="pub-authors"><strong>Bashirul Azam Biswas</strong>, Qiang Ji</p>
+              <p class="pub-venue">IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2023</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt" id="experience">
+      <div class="container">
+        <p class="section-kicker">Experience</p>
+        <h2 class="section-title">Academic & industry experience</h2>
+        <div class="timeline">
+          <article class="timeline-item">
+            <div class="timeline-date">2025 — Present</div>
+            <div><h3>Postdoctoral Research Associate</h3><p>Dartmouth College · Department of Biomedical Data Science</p></div>
+          </article>
+          <article class="timeline-item">
+            <div class="timeline-date">2019 — 2025</div>
+            <div><h3>Graduate Research & Teaching Assistant</h3><p>Rensselaer Polytechnic Institute · Electrical, Computer, and Systems Engineering</p></div>
+          </article>
+          <article class="timeline-item">
+            <div class="timeline-date">2022</div>
+            <div><h3>Research Intern</h3><p>Dreyev · Driver attention monitoring</p></div>
+          </article>
+          <article class="timeline-item">
+            <div class="timeline-date">2021</div>
+            <div><h3>IBM Research Extern</h3><p>Rensselaer–IBM Artificial Intelligence Research Collaboration · Visual question answering</p></div>
+          </article>
+          <article class="timeline-item">
+            <div class="timeline-date">2017 — 2019</div>
+            <div><h3>Lecturer</h3><p>University of Liberal Arts Bangladesh · Electrical and Electronic Engineering</p></div>
+          </article>
+          <article class="timeline-item">
+            <div class="timeline-date">2014 — 2016</div>
+            <div><h3>Physical Chip Designer</h3><p>PrimeSilicon · ASIC physical design</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="teaching">
+      <div class="container two-column">
+        <div>
+          <p class="section-kicker">Teaching</p>
+          <h2 class="section-title">Teaching experience</h2>
+          <p class="section-copy">My teaching experience spans electrical engineering, communication systems, embedded systems, computer architecture, and VLSI-related topics at both undergraduate and graduate levels.</p>
+        </div>
+        <div class="teaching-list">
+          <div><strong>University of Liberal Arts Bangladesh</strong><span>Analog & Digital Communication, Control Systems, Wireless Communication, Electrical Circuits, Physics, Electric Machines, Microwave Engineering</span></div>
+          <div><strong>Rensselaer Polytechnic Institute</strong><span>Embedded Systems / Embedded Control, Computer Components and Operations, VLSI-related teaching support</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section education-section">
+      <div class="container">
+        <p class="section-kicker">Education</p>
+        <div class="education-grid">
+          <article>
+            <span>Ph.D. · 2025</span>
+            <h3>Electrical, Computer, and Systems Engineering</h3>
+            <p>Rensselaer Polytechnic Institute, Troy, New York</p>
+            <p class="muted">Advisor: Prof. Qiang Ji</p>
+          </article>
+          <article>
+            <span>B.Sc. · 2014</span>
+            <h3>Electrical and Electronic Engineering</h3>
+            <p>Bangladesh University of Engineering and Technology (BUET)</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div class="container contact-inner">
+        <div>
+          <p class="section-kicker light">Contact</p>
+          <h2>Interested in research collaboration?</h2>
+          <p>I am happy to connect about uncertainty-aware AI, medical image analysis, structured probabilistic learning, and related research.</p>
+        </div>
+        <div class="contact-links">
+          <a href="mailto:Bashirul.Azam.Biswas@dartmouth.edu">Bashirul.Azam.Biswas@dartmouth.edu</a>
+          <a href="https://www.linkedin.com/in/bashirulazam" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://github.com/bashirulazam" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://scholar.google.com/citations?hl=en&user=4H9GwRYAAAAJ" target="_blank" rel="noopener">Google Scholar</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Bashirul Azam Biswas.</p>
+      <p>Built with HTML + CSS and hosted on GitHub Pages.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    const menuButton = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('.nav-links');
+    menuButton.addEventListener('click', () => {
+      const open = nav.classList.toggle('open');
+      menuButton.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    nav.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
+      nav.classList.remove('open');
+      menuButton.setAttribute('aria-expanded', 'false');
+    }));
+  </script>
 </body>
 </html>
